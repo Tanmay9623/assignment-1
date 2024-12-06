@@ -1,0 +1,495 @@
+.bg {
+    width: 100%;
+    height: 100%;
+
+    background:#e9f7ef;
+    --gap: 5em;
+    --line: 1px;
+    --color: #474b4f;
+ 
+	background: 
+    linear-gradient(-135deg, #e9f7ef 10%, transparent),
+    repeating-linear-gradient(45deg, #e9f7ef 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
+    repeating-linear-gradient(-45deg, #e9f7ef 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
+background-color: rgba(233, 247, 239, 0.25);
+
+}
+
+/* ------------------------------------------------------------------------- */
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+.navbar {
+    background-color: #86c232;
+    padding: 25px 100px;
+    box-shadow: inset 0px -5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.navbar-brand:hover {
+    color: #FF4500;
+    transform: scale(1.05);
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: #e9f7ef;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+
+.dropdown-menu {
+    padding: 0;
+    background-color: #474b4f;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    border-radius: 10px;
+    font-size: 18px;
+    color: #61892f;
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #222629;
+    color: #86c232;
+}
+
+.navbar-nav.d-flex .nav-item .nav-link {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #e9f7ef;
+    color: black;
+}
+
+.navbar-nav.d-flex .nav-item .nav-link:hover {
+    background-color: #000000;
+    color: #86c232;
+    border: #86c232 1px solid;
+}
+
+/* --------------------------------------------------------- */
+
+#Home {
+    position: relative;
+    height: 90dvh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    background: url('assets/ambitious-studio-rick-barrett-IXPKJcrOZCI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#Home h1 {
+    color:#86c232  ;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+#Home h1:hover {
+    color: #61892f;
+     
+    text-decoration: underline; 
+    
+}
+
+#Home p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+/* --------------------------------------------- */
+
+
+#feature {
+    background: linear-gradient(135deg, #6e7f80, #474b4f); /* Gradient background */
+    padding: 60px 0;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+#feature:hover {
+    transform: translateY(-10px); /* Slightly lift the element */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+#feature h2 {
+    color: #86c232 ;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+#feature h2:hover {
+    color: #61892f ;
+}
+
+#feature p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+}
+
+/* ---------------------------------------------------- */
+
+#card-1 {
+    padding: 60px 0;
+}
+
+#card-1 .card {
+    background-color: #474b4f;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-1 .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#card-1 .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#card-1 .card-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #86c232;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+#card-1 .card-title:hover {
+    color: #e9f7ef;
+}
+
+#card-1 .card-text {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* -------------------------------------------------------------------- */
+
+#card-2 {
+    padding: 60px 0;
+}
+
+#card-2 h1 {
+    font-weight: 700;
+    color: #61892f;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+#card-2 h1:hover {
+    color: #86c232;
+}
+
+#card-2 .card {
+    background-color: #474b4f;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-2 .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#card-2 .card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+
+#card-2 .card-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #86c232 ;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+#card-2 .card-title:hover {
+    color: #86c232;
+}
+
+#card-2 .card-text {
+    font-size: 20px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ---------------------------------------------------------------- */
+
+
+#review {
+    padding: 60px 0;
+}
+
+#review h1 {
+    font-weight: 700;
+    color: #61892f;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+#review h1:hover {
+    color: #86c232;
+}
+
+#review .card {
+    background-color: #474b4f;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#review .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#review .card-title {
+    font-size: 25px;
+    color: #86c232;
+}
+
+#review .rating img {
+    width: 25px;
+    margin: 0 3px;
+}
+
+#review .card-text {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ---------------------------------------------------------------- */
+#FAQs {
+    padding: 60px 20px;
+}
+
+#FAQs h1 {
+    font-weight: 700;
+    color: #61892f;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#FAQs h1:hover {
+    color: #86c232;
+}
+
+#FAQs p {
+    font-size: 20px;
+    color: black ;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accordion-button {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222629;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #61892f;
+    color: white;
+}
+
+.accordion-body {
+    font-size: 18px;
+    color: #222629;
+    line-height: 1.7;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #61892f;
+    color: white;
+    border-radius: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #474b4f;
+    color: #86c232;
+}
+
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #Home h1 {
+        font-size: 2rem;
+    }
+
+    #Home p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    #feature h2 {
+        font-size: 1.8rem;
+    }
+
+    #feature p {
+        font-size: 1rem;
+    }
+
+    #feature img {
+        margin-bottom: 20px;
+    }
+
+    #card-1 .card-img-top {
+        height: 150px;
+    }
+
+    #card-1 .card-title {
+        font-size: 1.15rem;
+    }
+
+    #card-1 .card-text {
+        font-size: 0.95rem;
+    }
+
+    #card-2 h1 {
+        font-size: 2rem;
+    }
+
+    #card-2 .card {
+        border-radius: 8px;
+    }
+
+    #card-2 .card img {
+        height: 250px;
+    }
+
+    #review h1 {
+        font-size: 2rem;
+    }
+
+    #review .card {
+        margin-bottom: 20px;
+    }
+
+    #FAQs h1 {
+        font-size: 2rem;
+    }
+
+    #FAQs p {
+        font-size: 0.9rem;
+        
+    }
+}
+
+
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: #ffffff; /* White text for contrast */
+    background: linear-gradient(135deg, #4a5d5a, #3a4144); /* Darker gradient on hover */
+
+   
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.card-body:hover {
+    background: linear-gradient(135deg, #6e7f80, #474b4f); /* Initial gradient background */
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+
+
+
+
+
+
+.accordion-flush > .accordion-item > .accordion-header .accordion-button,
+.accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+    background: linear-gradient(135deg, #4a5d5a, #e9f7ef); /* Darker gradient on hover */
+    color: #fff; /* White text color for contrast */
+    border: 1px solid #86c232; /* Border matching the gradient color */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+
+
+    
+}
+
+.accordion-flush > .accordion-item > .accordion-header .accordion-button:hover,
+.accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed:hover {
+    background: linear-gradient(135deg, #FF6347, #FF4500); /* Reverse gradient for hover effect */
+    color: #fff; /* White text on hover for contrast */
+ }
+
+
+
+
+
+
+
+ 
